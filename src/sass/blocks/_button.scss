@@ -1,0 +1,27 @@
+.button {
+	height: 45px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 150%; /* 21/14 */
+	color: $text-color;
+	padding: 12px 26px;
+	background: $main-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	border: none;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background: #ebc57e;
+		text-decoration: none;
+		color: $text-color;
+	}
+	&_invis {
+		background-color: inherit;
+		border: 1px solid $text-color;
+		&:hover {
+			background-color: inherit;
+			border: 1px solid $main-color;
+			color: $main-color;
+		}
+	}
+}
