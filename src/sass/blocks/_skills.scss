@@ -6,13 +6,14 @@
 		display: grid;
 		grid-template: minmax(auto, 270px) / repeat(auto-fit, 270px);
 		gap: 13px;
+		justify-content: space-around;
 	}
 	&__item {
 	}
 	&__progress {
 		margin-top: 120px;
 		display: grid;
-		grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+		grid-template: repeat(2, minmax(70px, auto)) / repeat(3, auto);
 		column-gap: 45px;
 		row-gap: 35px;
 	}
@@ -43,23 +44,22 @@
 	}
 }
 
-.progress {
-	&__item {
-	}
-}
 .item-progress {
 	display: grid;
-	grid-template: minmax(21px, auto) 14px / 200px 35px;
+	grid-template: 40px 14px / auto 35px;
+	/* grid-template: minmax(21px, auto) 14px / 200px 35px; */
 	justify-content: space-between;
 	align-content: space-between;
 	padding-top: 6px;
+	row-gap: 10px;
 
 	&__subtitle {
+
 		&:not(:last-child) {
 			margin: 0;
 		}
 		&::before {
-			top: -30%;
+			top: -19%;
 		}
 	}
 
@@ -67,7 +67,8 @@
 	}
 
 	&__graphic {
-		width: 350px;
+		width: 100%;
+		/* width: 350px; */
 		height: 14px;
 		border-radius: 4px;
 		background: #e8e4de;
